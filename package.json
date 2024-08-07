@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Frontend application",
   "scripts": {
+    "build":"react-scripts start",
     "start": "react-scripts start",
     "test": "jest",
     "build:css": "postcss styles.css -o output.css"
