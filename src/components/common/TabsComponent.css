@@ -1,0 +1,32 @@
+.custom-tabs {
+    border-bottom: 1px solid #E9E7DE; /* frGray */
+    margin-bottom: 1rem;
+  }
+  
+  .custom-tab {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #1E2203; /* frBlack */
+    border: 1px solid transparent;
+    border-bottom: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .custom-tab:hover {
+    background-color: #E9E7DE; /* frGray */
+  }
+  
+  .custom-tab.active {
+    background-color: #FBF9EF; /* frWhite */
+    color: #35452B; /* frGreendark */
+    border-color: #E9E7DE; /* frGray */
+    border-bottom: 1px solid #FBF9EF; /* frWhite */
+  }
+  
+  .custom-tab-content {
+    padding: 1rem;
+    background-color: #FBF9EF; /* frWhite */
+    border: 1px solid #E9E7DE; /* frGray */
+    border-top: none;
+  }

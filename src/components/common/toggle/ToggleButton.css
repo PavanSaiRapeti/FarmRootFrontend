@@ -1,0 +1,86 @@
+button.toggle {
+    background-color: lightgray;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .toggle-width {
+    width: 40px;
+  }
+  .toggle-height {
+    height: 20px;
+  }
+  
+  button:hover { background-color: lightgray; }
+  button.toggle:focus,
+  button.toggle:active { outline: none; }
+  button.toggle::-moz-focus-inner { border: 0; }
+  
+  .pin {
+    background-color: white;
+    border-radius: 98px;
+    height: 20px;
+    left: 4px;
+    position: absolute;
+    top: 0px;
+    width: 20px;
+    transition: left ease .5s;
+  }
+  .headPin{
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: left ease .5s;
+  }
+
+  
+  button.on {
+    background-color: #35452B;
+  }
+  
+  button.on .pin {
+    left: 20px;
+  }
+  button.on .headPin {
+    left: 3rem;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
