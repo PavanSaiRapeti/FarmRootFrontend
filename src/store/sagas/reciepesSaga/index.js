@@ -10,11 +10,9 @@ export function* fetchRecipesSaga(action) {
     yield put(setErrorPopup(null));
     yield put(setLoading(true));
     const { ingredients } = action.payload;
-    console.log("====> ingredients", ingredients);
     let response;
     response = yield call(fetchRecipes, ingredients);
     if (response?.preflight) {
-      console.log("Preflight response received:", response.preflight);
     } else {
         response = yield call(fetchRecipes, ingredients);
         if (!response) {

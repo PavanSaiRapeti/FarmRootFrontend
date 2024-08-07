@@ -22,10 +22,8 @@ const RecipeGenerator = () => {
 
   const onGenerate = (isTrue=false) => {
     if(!isTrue){
-      console.log(selectedIngredients, 'selectedIngredients');
       dispatch(fetchRecipes(selectedIngredients));
     }else{
-      console.log(cupboardIngredients, 'cupboardIngredients');
       setShowCupboardPopup(false);
       dispatch(fetchRecipes(cupboardIngredients));
       setShowPopup(true);

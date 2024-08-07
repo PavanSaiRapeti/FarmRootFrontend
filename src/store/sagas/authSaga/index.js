@@ -23,14 +23,12 @@ export function* registerSaga(action) {
     try {
         const response = yield call(register, action.payload);
         if (response) {
-            console.log("==>",response)
             yield put(registerSuccess({isRegistered: response?.isRegistered }));
             yield put(setErrorPopup("user registered sucessfully"));
         } else {
             yield put(setErrorPopup(response.error));
         }
     } catch (error) {
-        console.log('===>errrrrr',error)
         yield put(setErrorPopup(error?.response?.data?.error || "registeration failed"));
     }
 }

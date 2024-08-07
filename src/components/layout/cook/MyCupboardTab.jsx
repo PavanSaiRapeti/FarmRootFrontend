@@ -22,7 +22,6 @@ const MyCupboardTab = ({ closePopup , setShowPopup}) => {
   const generateRecipes = () => {
     // dispatch(generateRecipes(cupboard));
     setShowPopup(true);
-    console.log('Generating recipes with ingredients:', cupboard);
   };
 
   return (

@@ -28,7 +28,6 @@ const RecipeList = ({ handleClosePopup, showPopup }) => {
       };
       fetchOtherRecipes();
     }
-    console.log(otherRecipes);
   }, [recipes]);
 
   useEffect(() => {

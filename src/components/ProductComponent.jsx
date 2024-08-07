@@ -59,7 +59,6 @@ const ProductComponent = () => {
     };
 
     const handlePaymentSuccess = (details) => {
-        console.log('Payment successful:', details);
         // Handle post-payment actions here
         setShowPayPal(false);
     };
